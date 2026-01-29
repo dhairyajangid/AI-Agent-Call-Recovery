@@ -1,0 +1,58 @@
+# AI Call Agent Configuration
+
+# Retry Settings
+retry:
+  initial_delay: 5  # seconds
+  backoff_multiplier: 2
+  max_attempts: 3
+
+# Circuit Breaker Settings
+circuit_breaker:
+  failure_threshold: 3  # open circuit after this many failures
+  timeout: 60  # seconds to wait before trying half-open state
+
+# Service Settings
+services:
+  stt:
+    name: "Speech-to-Text"
+    failure_rate: 0.3  # 30% failure rate for demo
+
+  llm:
+    name: "Large Language Model"
+    failure_rate: 0.3
+
+  tts:
+    name: "Text-to-Speech"
+    failure_rate: 0.3
+
+# Logging Settings
+logging:
+  error_log_file: "logs/error_log.json"
+  alert_file: "logs/alerts.json"
+
+# Alert Severity Levels
+alert_levels:
+  - LOW
+  - MEDIUM
+  - HIGH
+  - CRITICAL
+```
+
+---
+
+## 🎯 Final Project Structure (Complete):
+```
+ai-call-agent/
+├── config/                  (empty folder)
+├── logs/                    (empty folder - will have files after running)
+├── venv/                    (virtual environment)
+│
+├── alerts.py               ✅ (you have this)
+├── call_agent.py           ⬅️ JUST CREATED
+├── circuit_breaker.py      ✅ (you have this)
+├── config.yaml             ⬅️ JUST CREATED
+├── demo.py                 ⬅️ JUST CREATED
+├── exceptions.py           ✅ (you have this)
+├── logger.py               ✅ (you have this)
+├── mock_services.py        ✅ (you have this)
+└── retry_manager.py        ✅ (you have this)
