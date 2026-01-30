@@ -402,7 +402,3 @@ The `demo.py` script simulates various failure scenarios:
    - Expected: Circuit closes after successful test
 
 ---
-   
-
----
-
