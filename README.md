@@ -2,7 +2,7 @@
 
 A production-ready AI voice agent system with robust error handling, automatic retry mechanisms, and circuit breaker patterns to ensure reliable operation even when external services fail.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Architecture Decisions](#architecture-decisions)
 - [Error Flow](#error-flow)
@@ -15,7 +15,7 @@ A production-ready AI voice agent system with robust error handling, automatic r
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project implements a resilient AI call agent that processes voice calls through three main services:
 1. **STT (Speech-to-Text)** - Converts audio to text
@@ -26,7 +26,7 @@ The system includes comprehensive error handling to ensure reliability in produc
 
 ---
 
-## 🏗️ Architecture Decisions
+## Architecture Decisions
 
 ### **1. Layered Error Handling Architecture**
 ```
@@ -70,7 +70,7 @@ Each component has a single responsibility:
 
 ---
 
-## 🔄 Error Flow
+## Error Flow
 
 ### **Complete Error Handling Flow Diagram**
 ```
@@ -131,7 +131,7 @@ Each component has a single responsibility:
 
 ---
 
-## 🔁 Retry & Circuit Breaker Behavior
+## Retry & Circuit Breaker Behavior
 
 ### **Retry Manager Behavior**
 
@@ -291,10 +291,23 @@ The demo simulates 5 calls with 30% failure rate for each service. You'll see:
 ### **Console Output:**
 
 <!-- PASTE SCREENSHOT HERE -->
-<img width="1873" height="1037" alt="Screenshot 2026-01-30 004952" src="https://github.com/user-attachments/assets/3ca962a2-1ec9-48c2-baf3-edbd576c288b" />
-<img width="1763" height="948" alt="Screenshot 2026-01-30 005023" src="https://github.com/user-attachments/assets/23a05a2a-786f-48af-b9a8-696b0f651061" />
-<img width="1763" height="948" alt="Screenshot 2026-01-30 005023" src="https://github.com/user-attachments/assets/250ec97b-d113-4186-a3ed-2cc0587cd520" />
-<img width="1772" height="898" alt="Screenshot 2026-01-30 005055" src="https://github.com/user-attachments/assets/0f18686e-1908-4ffd-849e-4136c2ab8c9a" />
+<!-- Console execution output screenshots -->
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3ca962a2-1ec9-48c2-baf3-edbd576c288b" width="90%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/23a05a2a-786f-48af-b9a8-696b0f651061" width="90%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/250ec97b-d113-4186-a3ed-2cc0587cd520" width="90%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f18686e-1908-4ffd-849e-4136c2ab8c9a" width="90%" />
+</p>
 
 
 
@@ -308,22 +321,28 @@ The demo simulates 5 calls with 30% failure rate for each service. You'll see:
 
 ---
 
-### **Error Log (error_log.json):**
-# Auto generates when run program [demo.py]
-<img width="1815" height="842" alt="image" src="https://github.com/user-attachments/assets/c282eca8-c3ca-417f-8f7b-1240890a9b8c" />
+## **Error Log (error_log.json):**
+### Auto generates when run program [demo.py]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c282eca8-c3ca-417f-8f7b-1240890a9b8c" width="90%" />
+</p>
+
 
 ---
 
-### **Alert Log (alerts.json):**
-# Auto generates when run program [demo.py]
-<img width="1822" height="842" alt="image" src="https://github.com/user-attachments/assets/79db35e9-4165-4be7-96e4-b11e1ffb0f3c" />
+## **Alert Log (alerts.json):**
+### Auto generates when run program [demo.py]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/79db35e9-4165-4be7-96e4-b11e1ffb0f3c" width="90%" />
+</p>
+
 
 
 ---
 
 ## 📁 Project Structure
-# 1> Here the Config folder not needed to run the program
-# 2> The logs Automaticaly created when we run the demo.py 
+### 1> Here the Config folder not needed to run the program
+### 2> The logs Automaticaly created when we run the demo.py 
 ```
 ai-call-agent/
 ├── config/                     # Configuration folder (empty)
@@ -344,7 +363,10 @@ ai-call-agent/
 ├── .gitignore                 # Git ignore rules
 └── README.md                  # This file
 ```
-<img width="572" height="615" alt="Screenshot 2026-01-30 010501" src="https://github.com/user-attachments/assets/bcc2da70-7db5-46b4-baae-f0a9a21aee89" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bcc2da70-7db5-46b4-baae-f0a9a21aee89" width="60%" />
+</p>
+
 
 ---
 
